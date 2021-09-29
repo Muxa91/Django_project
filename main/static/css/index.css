@@ -1,0 +1,271 @@
+body{
+    font-size: 20px;
+    font-family: 'FuturaPT',Arial,sans-serif;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.contents{
+    width: 1224px;
+    /*height: 1024px;*/
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+a:link{
+    color: #2a2e27;
+    text-decoration:none;
+}
+a:visited{
+    color:#2a2e27;
+    text-decoration:none;
+}
+a:hover{
+    color:#2a2e27;
+    text-decoration:underline;
+    font-size:110%;
+}
+a:focus{
+    color:#424242;
+    text-decoration:underline;
+    font-size:110%;
+}
+.submit{
+float:right;
+}
+.modal {
+    font-size:13px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1050;
+    opacity: 0;
+    -webkit-transition: opacity 200ms ease-in;
+    -moz-transition: opacity 200ms ease-in;
+    transition: opacity 200ms ease-in; /* анимация перехода */
+    pointer-events: none; /* элемент невидим для событий мыши */
+    margin: 0;
+    padding: 0;
+}
+
+.modal:target {
+    opacity: 1;
+	  pointer-events: auto;
+    overflow-y: auto;
+}
+/* ширина модального окна и его отступы от экрана */
+.modal-dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+@media (min-width: 576px) {
+  .modal-dialog {
+      max-width: 300px;
+      margin: 30px auto; /* для отображения модального окна по центру */
+  }
+}
+.modal-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+}
+@media (min-width: 768px) {
+  .modal-content {
+      -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.5);
+      box-shadow: 0 5px 15px rgba(0,0,0,.5);
+  }
+}
+/* свойства для заголовка модального окна */
+.modal-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #eceeef;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+/* свойства для кнопки "Закрыть" */
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    opacity: .5;
+    text-decoration: none;
+}
+/* свойства для кнопки "Закрыть" при нахождении её в фокусе или наведении */
+.close:focus, .close:hover {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+/* свойства для блока, содержащего основное содержимое окна */
+.modal-body {
+  position: relative;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 15px;
+    overflow: auto;
+}
+
+.nav li{
+    margin-right: 40px;
+    display: inline;
+    color: #2a2e27;
+    font-size: 20px;
+    font-weight:bold;
+    text-shadow: 1px 1px 2px black, 0 0 1em #00ff55;
+}
+.icon_nav{
+    mix-blend-mode: multiply;
+    float: right;
+    margin-left:10px;
+}
+.block_Head{
+    right:300px;
+    top:200px;
+    position: absolute;
+    background-color: #2a2e27;
+    width: 16%;
+    height: 500px;
+}
+.photo img{
+    float: right;
+    left:150px;
+    top:200px;
+    position: relative;
+    animation: left 2s;
+}
+h1{
+    padding-top: 100px;
+    font-size: 60px;
+    font-weight:bold;
+
+}
+.block1{
+    width: 550px;
+}
+.block2{
+    margin-top:100px;
+}
+.block2_Head{
+    padding-right: 200px;
+    margin-right:500px;
+    width: 1024px;
+    background-color:#2a2e27;
+    color:white;
+    font-size:32px;
+    font-weight:bold;
+    margin-bottom:30px;
+
+}
+.block2_text{
+    margin-top:30px;
+    margin-right: 150px;
+}
+.block3_Head{
+
+    background-color:#2a2e27;
+    color:white;
+    width: 1024px;
+    padding-right: 280px;
+    margin-top:30px;
+    padding-left: 150px;
+}
+.block3_text{
+    margin-top:30px;
+    padding-left: 200px;
+}
+footer{
+    margin-top:300px;
+    background-color:#2a2e27;
+    color:white;
+    padding-top:30px;
+    font-size: 60%;
+    height: 100px;
+    width: 100%;
+    padding-right: 30px;
+
+}
+.footer li{
+
+    display: inline;
+}
+.footer img{
+    margin-left:2px;
+    float:right;
+    mix-blend-mode: multiply;
+}
+@keyframes left {
+
+    from { left: 500px;
+            top: 500px;}
+    to { left: 150px;
+         }
+}
+/* Для страницы works *//
+#works div{
+    margin:5px;
+    display: inline;
+}
+
+#works img{
+    width: 300px;
+    cursor: pointer;
+    border: 1px solid #FFF;
+    animation: rotate 1s;
+
+}
+#works img:hover {
+    border: 1px solid yellow;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}

@@ -1,0 +1,16 @@
+{% extends "main/index.html" %}
+{% block title %}
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/autorization.css '%}">
+{% endblock title %}
+    {% block main %}
+<form method="POST" class="form">
+    {% csrf_token %}
+    <table>
+         {{ form }}
+    </table>
+
+<input type="submit" value="send" onclick="" class="submit">
+</form>
+<script src="{% static 'js/script_works.js' %}"></script>
+    {% endblock main %}

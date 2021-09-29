@@ -1,0 +1,21 @@
+{% extends "main/index.html" %}
+{% load static %}
+{% block main %}
+      <div id="works" style="margin-top:100px">
+        <div class="work1" style="display: inline;">
+            <a href="{% static 'images/other/DIPLOM_AKADEMII_1.webp' %}">
+                <img src="{% static 'images/other/DIPLOM_AKADEMII_1.webp' %}" alt="Диплом академии">
+            </a>
+        </div>
+        <div class="work2" style="display: inline;">
+            <a href="{% static 'images/other/DIPLOM_UCHILISCHA_ER.webp' %}">
+                <img src="{% static 'images/other/DIPLOM_UCHILISCHA_ER.webp' %}" alt="Диплом училища">
+            </a>
+        </div>
+        <div class="work3">
+            <a href="{% static 'images/other/PREMIYA_ERSHOVA.jpg' %}">
+                <img src="{% static 'images/other/PREMIYA_ERSHOVA.jpg' %}" alt="Премия Ершова">
+            </a>
+        </div>
+    </div>
+{% endblock main %}
